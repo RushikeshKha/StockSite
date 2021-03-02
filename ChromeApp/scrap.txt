@@ -1,0 +1,42 @@
+div listContainer-1OhjZIMS
+div 1 
+div class firstItem-1fMdZzn9 symbolName-aMd2VpDf
+span 0
+
+code: stckName = window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("firstItem-1fMdZzn9 symbolName-aMd2VpDf")[0].getElementsByTagName("span")[1].textContent
+
+span class cell-2dpljH_9 last-31ae42tU
+
+Important
+Name
+for (i = 0; i < 10; i++) {
+  console.log(window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("firstItem-1fMdZzn9 symbolName-aMd2VpDf")[i].getElementsByClassName("inner-1TPTS2KY symbolNameText-2EYOR9jS")[0].textContent)
+}
+Price
+for (i = 0; i < 20; i++) {
+  console.log(window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("cell-2dpljH_9 last-31ae42tU")[i].textContent)
+}
+Value chng
+for (i = 0; i < 10; i++) {
+  console.log(window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("cell-2dpljH_9 change-2u7N-Juv")[i].textContent)
+}
+perChng
+for (i = 0; i < 10; i++) {
+  console.log(window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("lastItem-2kcQWdD4 cell-2dpljH_9 changeInPercents-23LFemIM")[i].textContent)
+}
+
+
+function getStockData(num){
+    var stkdata = [];
+    for(i=0;i<num;i++){
+        var stckName = window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("firstItem-1fMdZzn9 symbolName-aMd2VpDf")[i].getElementsByClassName("inner-1TPTS2KY symbolNameText-2EYOR9jS")[0].textContent;
+        var stckValue = window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("cell-2dpljH_9 last-31ae42tU")[i].textContent;
+        var stckChng = window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("cell-2dpljH_9 change-2u7N-Juv")[i].textContent;
+        var stckPerChng = window.document.getElementsByClassName("listContainer-1OhjZIMS")[0].getElementsByClassName("lastItem-2kcQWdD4 cell-2dpljH_9 changeInPercents-23LFemIM")[i].textContent;
+    }
+    return {stockName:stckName,stockPrice:stckValue,stockChange:stckChng,stockPerChng:stckPerChng};}
+
+
+
+    for(i=0;i<10;i++){
+    console.log(getStockData(i))}
