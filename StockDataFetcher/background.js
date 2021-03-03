@@ -5,4 +5,6 @@ chrome.browserAction.onClicked.addListener(buttonC)
 
 function buttonC(){
     console.log("Button Clicked")
+    chrome.tabs.executeScript(null,{code:"console.log('testestset')"});
 }
+
