@@ -1,2 +1,1 @@
-
-   chrome.tabs.executeScript(null,{code: 'console.log("test")'});
+console.log("test")

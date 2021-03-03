@@ -3,10 +3,11 @@
     "description": "My first Chrome App.",
     "version": "0.1",
     "manifest_version": 2,
-    "app": {
-      "background": {
-        "scripts": ["background.js"]
+    "content_scripts":[
+      {
+        "matches":["<all_urls>"],
+        "js":"backgound.js"
       }
-    }
+    ]
     
   }
