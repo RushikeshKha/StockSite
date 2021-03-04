@@ -1,0 +1,3 @@
+10% value change in UPTREND market
+DOWN TREND market has higher percentage [more than 100%]
+plot line when stock price is in 20% range
