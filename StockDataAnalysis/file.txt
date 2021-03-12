@@ -1,3 +1,16 @@
 10% value change in UPTREND market
 DOWN TREND market has higher percentage [more than 100%]
 plot line when stock price is in 20% range
+=========================================================
+
+window.document.getElementsByClassName("icon-beK_KS0k")[37].click();
+
+==========================================================
+download data
+window.document.getElementsByClassName("xlsdownload")[0].getElementsByTagName("a")[0].click()
+historic data
+window.document.getElementsByClassName("dusty-orange-links")[0].getElementsByTagName("a")[4].click()
+url
+goto url of stock
+
+window.document.getElementsByTagName("tbody")[0].getElementsByTagName("tr")[8].getElementsByTagName("td")[0].textContent
