@@ -6,6 +6,11 @@ chrome.runtime.sendMessage({ message: {name:"rushikesh",lname:"Khadikar"} }, fun
     console.log(response);
 });
 
+setInterval(() => {
+    chrome.runtime.sendMessage({ message: {name:"rushikesh",lname:"Khadikar"} }, function(response) {
+        console.log(response);
+    });
+}, 10000);
 
 // Listening to messages in Context Script
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
