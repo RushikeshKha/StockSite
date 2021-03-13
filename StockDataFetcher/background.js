@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     console.log(JSON.stringify(request))
     data = JSON.stringify(request)
     var xhr = new XMLHttpRequest();
-    xhr.open('GET','http://127.0.0.1:8000?'+data,true)
+    xhr.open('GET','http://127.0.0.1:8000?data='+data,true)
     xhr.send()
 
     // Callback for that request
