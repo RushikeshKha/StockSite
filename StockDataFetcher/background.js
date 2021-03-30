@@ -1,11 +1,11 @@
-console.log("backgroung test")
+console.log("backgroung test")//PERMISSON TO RUN BACKGROUND SCRIPT
 console.log("backgroung testing")
 var data = {}
-chrome.browserAction.onClicked.addListener(buttonC)
+chrome.browserAction.onClicked.addListener(buttonC)//IT IS USED TO CAPTURE ONCLICKED EVENT ON TOOLBAR BUTTON
 
 function buttonC(){
     console.log("Button Clicked")
-    chrome.tabs.executeScript(null,{file:'back.js'});
+    chrome.tabs.executeScript(null,{file:'back.js'});//IT IS USED TO EXECUTE SCRIPT IN CONTEXT  
     chrome.tabs.executeScript(null,{code:'console.log("test");'})
 }
 
