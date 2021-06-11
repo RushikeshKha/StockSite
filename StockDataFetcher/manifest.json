@@ -1,21 +1,21 @@
 {
-  "name": "Hello World!", //GIVING THE NAME TO THE EXTENSIION
+  "name": "TradingView",
   "description": "My first Chrome.",
   "version": "0.1",
-  "manifest_version": 2, //MANIFEST VERSION IS 2 OR 3
+  "manifest_version": 2,
   "content_scripts":[
     {
-      "matches":["<all_urls>"],// PERMISSION FOR CONTENT SCRIPT
+      "matches":["<all_urls>"],
       "js":["back.js"]
     }
   ],
   "background":{
     "scripts":["background.js"]
   },
-  "browser_action":{//BROWSER ACTION IS USED TO SHOW ICON IN TOOLBAR
+  "browser_action":{
     "default_icon":"icon.png"
   },
-  "permissions": [//API PERMISSIONS
+  "permissions": [
     "tabs",
     "<all_urls>"
   ]
